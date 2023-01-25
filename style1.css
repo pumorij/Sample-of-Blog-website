@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+} 
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.searchbox{
+    height: 3vh;
+    width: 15vh;
+    text-align: center;
+}
+
+.sample{
+    display: grid;
+    grid-template-rows: 220px 220px 120px 100px;
+    /* grid-auto-rows: auto;
+    grid-auto-columns: auto; */
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+    grid-template-areas: "sbp ab" "hd ar" "sh ew" "sh2 .";
+}
+
+#sampleblog{
+    grid-area: sbp;
+}
+#abt{
+    grid-area: ab;
+}
+#main{
+    grid-area: hd;
+}
+#arhi{
+    grid-area: ar;
+}
+#mainsub1{
+    grid-area: sh;
+}
+#mainsub2{
+    grid-area: sh2;
+}
+#other{
+    grid-area: ew;
+}
+a{
+    color: blue;
+}
+
+.box{
+    border: 0.5px dashed black;
+}
+
+p{
+    margin-top: 0.5rem;
+}
+
+li{
+    line-height: 1.5;
+}
+
+footer{
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.button{
+    width: 6vw;
+    border-radius: 1em;
+    border-color: lightgray;
+
+}
+.button:hover{
+    color: blue;
+    border-color: blue;
+}
+
+.subs{
+    color: rgb(71, 66, 66);
+}
+
+.date{
+    padding-top: 0.5rem;
+}
